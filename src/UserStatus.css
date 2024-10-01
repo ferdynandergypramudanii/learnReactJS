@@ -1,0 +1,20 @@
+/* CSS */
+.UserStatus {
+  padding-top: 20px;
+  width: 100%; /* Memastikan kontainer penuh */
+  display: flex; /* Menggunakan flexbox */
+  justify-content: center; /* Mengatur isi menjadi terpusat */
+}
+
+.child {
+  width: fit-content; /* Mengatur lebar sesuai konten */
+}
+
+h1,
+button {
+  margin: 0; /* Menghilangkan margin default */
+}
+
+#btn {
+  margin-top: 15px;
+}

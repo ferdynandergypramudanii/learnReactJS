@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import "./UserStatus.css";
 
-function UserStatus() {
+function UserStatus({ name }) {
   const [status, setStatus] = useState(false);
 
   const toggleStatus = () => {
@@ -8,12 +9,18 @@ function UserStatus() {
   };
 
   return (
-    <>
-      {status ? <h1>You are Online</h1> : <h1>You Are Offline</h1>}
-      <button onClick={toggleStatus}>
-        {status ? "Go Offline" : "Go Online"}
-      </button>
-    </>
+    <div className="UserStatus">
+      <div className="child">
+        {status ? (
+          <h1>You are Online {name}</h1>
+        ) : (
+          <h1>You Are Offline {name}</h1>
+        )}
+        <button id="btn" onClick={toggleStatus}>
+          {status ? "Go Offline" : "Go Online"}
+        </button>
+      </div>
+    </div>
   );
 }
 
