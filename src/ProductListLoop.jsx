@@ -12,6 +12,10 @@ function ProductListLoop({ products }) {
     border: "1px solid black",
   };
 
+  const handleBuyClick = (product) => {
+    console.log(`Anda membeli : ${product}`);
+  };
+
   return (
     <>
       <h3 style={{ textAlign: "center", marginTop: "30px" }}>
@@ -23,6 +27,7 @@ function ProductListLoop({ products }) {
             <div style={card}>
               <h4>Nama: {product.name}</h4>
               <h5>Price: {product.price}</h5>
+              <button onClick={() => handleBuyClick(product.name)}>Beli</button>
             </div>
           );
         })}
