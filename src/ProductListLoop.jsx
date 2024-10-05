@@ -18,7 +18,7 @@ function ProductListLoop({ products }) {
 
   return (
     <>
-      <h3 style={{ textAlign: "center", marginTop: "30px" }}>
+      <h3 style={{ textAlign: "center", marginTop: "40px" }}>
         Looping with map
       </h3>
       <div style={wrapper}>

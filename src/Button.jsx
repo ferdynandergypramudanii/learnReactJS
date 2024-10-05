@@ -1,4 +1,6 @@
-import { useState } from "react";
+// button onClick, useState, and useEffect
+
+import { useState, useEffect } from "react";
 
 function Button() {
   const [counter, setCounter] = useState(0);
@@ -11,6 +13,10 @@ function Button() {
     setCounter(0);
   }
 
+  useEffect(() => {
+    console.log(`diklik ${counter} kali`);
+  }, [counter]);
+
   return (
     <>
       <div
@@ -18,6 +24,7 @@ function Button() {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
+          marginTop: "30px",
         }}
       >
         <h3>Button onClick</h3>

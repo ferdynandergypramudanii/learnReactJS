@@ -7,6 +7,7 @@ import Header from "./Header.jsx";
 import UserStatus from "./UserStatus.jsx";
 import ProductListLoop from "./ProductListLoop.jsx";
 import Button from "./Button.jsx";
+import ThumbsUpAndDown from "./ThumbsUpAndDown.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -26,6 +27,7 @@ function App() {
       <UserStatus name="Ergy" />
       <ProductListLoop products={products} />
       <Button />
+      <ThumbsUpAndDown />
     </>
   );
 }
