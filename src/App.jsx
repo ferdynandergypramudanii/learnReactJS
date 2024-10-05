@@ -6,6 +6,7 @@ import MenuResto from "./MenuResto.jsx";
 import Header from "./Header.jsx";
 import UserStatus from "./UserStatus.jsx";
 import ProductListLoop from "./ProductListLoop.jsx";
+import Button from "./Button.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -24,6 +25,7 @@ function App() {
       <MenuResto />
       <UserStatus name="Ergy" />
       <ProductListLoop products={products} />
+      <Button />
     </>
   );
 }
